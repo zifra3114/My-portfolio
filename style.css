@@ -1461,7 +1461,6 @@ h4 {
   z-index: 99999;
 }
 
-/* PRELOADER BASE */
 #preloader {
   position: fixed;
   top: 0;
@@ -1478,27 +1477,15 @@ h4 {
 
   z-index: 99999;
 
-  /* smooth entry */
   opacity: 1;
   transform: translateY(0);
   transition: all 0.8s ease;
 }
 
-/* CONTENT ANIMATION */
+/* CONTENT */
 .loader-container {
   text-align: center;
   animation: popIn 0.8s ease;
-}
-
-@keyframes popIn {
-  from {
-    transform: scale(0.7);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 
 /* LOGO */
@@ -1510,6 +1497,7 @@ h4 {
   animation: fadeUp 1s ease;
   text-align: center;
 }
+
 .brand {
   color: white;
   font-size: 18px;
@@ -1518,7 +1506,18 @@ h4 {
   animation: fadeUp 1.2s ease;
 }
 
-/* smooth fade up */
+/* ANIMATIONS */
+@keyframes popIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -1530,8 +1529,52 @@ h4 {
   }
 }
 
-/* 💥 EXIT ANIMATION (UP SLIDE + FADE) */
+/* EXIT */
 #preloader.loaded {
   transform: translateY(-100%);
   opacity: 0;
+}
+
+/* =======================
+   📱 RESPONSIVE PART
+======================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .portfolio-logo {
+    width: 320px;
+    margin-top: -120px;
+  }
+
+  .brand {
+    font-size: 16px;
+    margin-top: -140px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .portfolio-logo {
+    width: 220px;
+    margin-top: -80px;
+  }
+
+  .brand {
+    font-size: 14px;
+    margin-top: -90px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 360px) {
+  .portfolio-logo {
+    width: 180px;
+    margin-top: -60px;
+  }
+
+  .brand {
+    font-size: 12px;
+    margin-top: -70px;
+  }
 }
