@@ -1,873 +1,1530 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<head>
+  <meta charset="UTF-8">
+  <title>Zifra Firdous — Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@600;700&family=Archivo:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene">
+    <nav data-reveal="fade">
+      <div class="nav-mark">
+        <div class="dot">Z</div>
+        <div class="label">
+          FULL STACK DEVELOPER
+          <strong>WEB & APP BUILDER</strong>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <span class="nav-status"></span>
+        AVAILABLE FOR PROJECTS
+        <span class="plus">+</span>
+      </div>
+      <button class="nav-burger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="chatbot.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nabla&family=Satisfy&family=Sekuya&family=Share+Tech&family=Tagesschrift&display=swap"
-      rel="stylesheet" />
-  </head>
-  <body>
-    <div id="preloader">
-      <div class="loader-container">
-        <!-- Glowing Ring -->
-        <div class="ring"></div>
+    <section class="hero" id="home">
+      <div class="bg-word">PORTFOLIO</div>
 
-        <!-- Logo -->
-        <img src="assets/portfolio.png" class="portfolio-logo" />
-        <h1 class="brand">ZIFRA FIRDOUS | Full Stack Developer</h1>
+      <div class="hero-copy">
+        <div class="greet" data-reveal="up" data-reveal-delay="0">Hello, I'm</div>
+        <h1 data-reveal="up" data-reveal-delay="120">
+          Zifra Firdous
+          <br>
+          <span id="typing-text"></span><span class="typing-cursor"></span>
+        </h1>
+        <p data-reveal="up" data-reveal-delay="240">
+          I build fast, reliable web applications from the database up to the browser.
+          From planning the architecture to shipping a polished interface,
+          I handle the full pipeline so ideas turn into working products.
+        </p>
+        <div class="loc" data-reveal="up" data-reveal-delay="340">
+          <span class="pin">◎</span>
+          BASED IN Pakistan
+        </div>
+      </div>
+
+      <div class="hero-portrait" data-reveal="scale" data-reveal-delay="160">
+        <div class="portrait-frame">
+          <img src="assets/me.png" alt="Zifra Firdous">
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="side-intro" data-reveal="right" data-reveal-delay="220">
+          <span class="badge">✦</span>
+          <p>Turning ideas into working, end-to-end applications.</p>
+        </div>
+        <ul class="side-list">
+          <li data-reveal="right" data-reveal-delay="300"><span class="cross">+</span> Frontend Development</li>
+          <li data-reveal="right" data-reveal-delay="380"><span class="cross">+</span> Backend & APIs</li>
+          <li data-reveal="right" data-reveal-delay="460"><span class="cross">+</span> Database Design</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+<section class="work" id="work">
+  <div class="work-head">
+    <div class="work-title-wrap">
+      <span class="work-eyebrow">03 / SELECTED WORK</span>
+
+      <h2 data-reveal="up">
+        Things I've <span>Built</span>
+      </h2>
+    </div>
+
+    <div class="work-intro" data-reveal="up" data-reveal-delay="120">
+      <span class="work-line"></span>
+      <p>
+        A selection of full-stack applications, dashboards and digital
+        experiences built with modern technologies.
+      </p>
+    </div>
+  </div>
+
+  <div class="work-rows">
+
+    <div class="marquee-row to-right" data-reveal="fade" data-reveal-delay="80">
+      <div class="marquee-track" id="row-1"></div>
+    </div>
+
+    <div class="marquee-row to-left" data-reveal="fade" data-reveal-delay="180">
+      <div class="marquee-track" id="row-2"></div>
+    </div>
+
+  </div>
+
+  <div class="work-footer">
+    <span>FULL STACK DEVELOPMENT</span>
+    <span>REACT · NODE · DJANGO · DATABASES</span>
+  </div>
+</section>
+<!-- =========================================================
+     ABOUT SECTION
+========================================================= -->
+
+<section class="about-section" id="about">
+
+  <!-- Background Elements -->
+  <div class="about-orb about-orb-1"></div>
+  <div class="about-orb about-orb-2"></div>
+
+  <!-- LEFT VERTICAL TEXT -->
+  <div class="about-vertical about-vertical-left">
+    <span>ABOUT</span>
+  </div>
+
+
+  <!-- MAIN CONTENT -->
+  <div class="about-container">
+
+    <!-- TOP HEADER -->
+    <div class="about-top" data-reveal="up">
+
+      <div class="about-eyebrow">
+        <span class="about-line"></span>
+        <span>WHO I AM</span>
+      </div>
+
+      <div class="about-year">
+        2026
+      </div>
+
+    </div>
+
+
+    <!-- MAIN GRID -->
+    <div class="about-main">
+
+      <!-- IMAGE -->
+      <div class="about-image-area" data-reveal="scale">
+
+        <div class="about-image-glow"></div>
+
+        <div class="about-image">
+
+          <img
+            src="assets/me.png"
+            alt="Zifra Firdous"
+          >
+
+          <div class="image-index">
+            01
+          </div>
+
+          <div class="image-corner corner-one"></div>
+          <div class="image-corner corner-two"></div>
+          <div class="image-corner corner-three"></div>
+          <div class="image-corner corner-four"></div>
+
+        </div>
+
+        <div class="image-caption">
+          <span>ZF / 001</span>
+          <span>FULL STACK DEVELOPER</span>
+        </div>
+
+      </div>
+
+
+      <!-- CONTENT -->
+      <div class="about-content">
+
+        <div class="about-small-title" data-reveal="up" data-reveal-delay="0">
+          A DEVELOPER WHO
+        </div>
+
+        <h2 data-reveal="up" data-reveal-delay="80">
+          BUILDS
+          <span>BEYOND</span>
+          THE SCREEN.
+        </h2>
+
+        <p class="about-lead" data-reveal="up" data-reveal-delay="160">
+          I'm <strong>Zifra Firdous</strong>, a Full Stack Developer
+          focused on creating modern, responsive and meaningful
+          digital experiences.
+        </p>
+
+        <p class="about-description" data-reveal="up" data-reveal-delay="220">
+          I enjoy turning ideas into real products. From designing
+          interfaces and building frontend experiences to developing
+          APIs, databases and complete backend systems, I work across
+          the entire development process.
+        </p>
+
+
+        <!-- HIGHLIGHTS -->
+        <div class="about-highlights" data-reveal="up" data-reveal-delay="280">
+
+          <div class="highlight">
+            <span class="highlight-number">01</span>
+
+            <div>
+              <small>WHAT I DO</small>
+              <strong>Full Stack Development</strong>
+            </div>
+          </div>
+
+
+          <div class="highlight">
+            <span class="highlight-number">02</span>
+
+            <div>
+              <small>HOW I WORK</small>
+              <strong>Clean · Scalable · Reliable</strong>
+            </div>
+          </div>
+
+
+          <div class="highlight">
+            <span class="highlight-number">03</span>
+
+            <div>
+              <small>WHAT I BUILD</small>
+              <strong>Websites · Apps · APIs</strong>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- STACK -->
+        <div class="about-tech" data-reveal="up" data-reveal-delay="340">
+
+          <span class="tech-label">CURRENTLY WORKING WITH</span>
+
+          <div class="tech-list">
+            <span>REACT</span>
+            <span>NODE</span>
+            <span>EXPRESS</span>
+            <span>MONGODB</span>
+            <span>PYTHON</span>
+            <span>DJANGO</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOTTOM STATEMENT -->
+    <div class="about-bottom" data-reveal="up">
+
+      <span class="bottom-number">01</span>
+
+      <p>
+        CODE IS NOT JUST ABOUT MAKING THINGS WORK.
+        <strong>IT'S ABOUT MAKING THEM MATTER.</strong>
+      </p>
+
+      <span class="bottom-arrow">↗</span>
+
+    </div>
+
+  </div>
+
+
+  <!-- RIGHT VERTICAL TEXT -->
+  <div class="about-vertical about-vertical-right">
+    <span>DEVELOPER</span>
+  </div>
+
+</section>
+
+<!-- =========================================================
+     SKILLS SECTION
+========================================================= -->
+
+<section class="skills-section" id="skills">
+
+  <!-- Background -->
+  <div class="skills-grid"></div>
+
+  <div class="skills-glow skills-glow-one"></div>
+  <div class="skills-glow skills-glow-two"></div>
+
+
+  <!-- Large Background Typography -->
+  <div class="skills-vertical skills-vertical-left">
+    SKILLS
+  </div>
+
+  <div class="skills-vertical skills-vertical-right">
+    SKILLS
+  </div>
+
+
+  <div class="skills-container">
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <div class="skills-header" data-reveal="up">
+
+      <div class="skills-label">
+        <span class="skills-line"></span>
+        <span>02 / WHAT I KNOW</span>
+      </div>
+
+      <div class="skills-status">
+        <span class="status-dot"></span>
+        ALWAYS LEARNING
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <div class="skills-main">
+
+
+      <!-- ===================================================
+           LEFT INTRO
+      ==================================================== -->
+
+      <div class="skills-intro" data-reveal="left">
+
+        <span class="skills-small-title">MY TOOLBOX</span>
+
+        <h2>
+          BUILT
+          <span>TO</span>
+          CREATE.
+        </h2>
+
+        <p>
+          I work across the full development stack, combining
+          frontend interfaces, backend systems and databases
+          to build complete digital products.
+        </p>
+
+        <div class="skills-counter">
+          <strong>06</strong>
+          <span>CORE<br>TECHNOLOGIES</span>
+        </div>
+
+      </div>
+
+
+
+      <!-- ===================================================
+           CENTER ORBIT
+      ==================================================== -->
+
+      <div class="skills-orbit-area" data-reveal="scale" data-reveal-delay="120">
+
+        <div class="orbit-glow"></div>
+
+        <!-- Outer / Middle / Inner static rings (decorative, don't move) -->
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+
+
+        <!-- =================================================
+             CENTER SKILL CIRCLE
+        ================================================== -->
+
+        <div class="orbit-center">
+
+          <svg class="progress-ring" viewBox="0 0 160 160">
+            <circle class="progress-ring-bg" cx="80" cy="80" r="68"></circle>
+            <circle class="progress-ring-fill" cx="80" cy="80" r="68"></circle>
+          </svg>
+
+          <div class="center-content">
+            <span class="center-number">02</span>
+            <div class="center-icon">&lt;/&gt;</div>
+            <strong id="activeSkill">React.js</strong>
+            <div class="center-percentage">
+              <span id="skillPercentage">0</span>%
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             ORBIT SKILLS — rotating ring
+        ================================================== -->
+
+        <div class="orbit-ring">
+
+          <div class="orbit-pos" style="--angle:0deg">
+            <button class="orbit-skill active" data-skill="React.js" data-level="90" aria-label="React.js">
+              <span class="skill-icon">R</span>
+              <strong>React</strong>
+            </button>
+          </div>
+
+          <div class="orbit-pos" style="--angle:60deg">
+            <button class="orbit-skill" data-skill="Node.js" data-level="88" aria-label="Node.js">
+              <span class="skill-icon">N</span>
+              <strong>Node</strong>
+            </button>
+          </div>
+
+          <div class="orbit-pos" style="--angle:120deg">
+            <button class="orbit-skill" data-skill="Express.js" data-level="86" aria-label="Express.js">
+              <span class="skill-icon">E</span>
+              <strong>Express</strong>
+            </button>
+          </div>
+
+          <div class="orbit-pos" style="--angle:180deg">
+            <button class="orbit-skill" data-skill="MongoDB" data-level="84" aria-label="MongoDB">
+              <span class="skill-icon">M</span>
+              <strong>MongoDB</strong>
+            </button>
+          </div>
+
+          <div class="orbit-pos" style="--angle:240deg">
+            <button class="orbit-skill" data-skill="Python" data-level="82" aria-label="Python">
+              <span class="skill-icon">P</span>
+              <strong>Python</strong>
+            </button>
+          </div>
+
+          <div class="orbit-pos" style="--angle:300deg">
+            <button class="orbit-skill" data-skill="Django" data-level="80" aria-label="Django">
+              <span class="skill-icon">D</span>
+              <strong>Django</strong>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- ===================================================
+           RIGHT SKILL LIST
+      ==================================================== -->
+
+      <div class="skills-list-panel" data-reveal="right" data-reveal-delay="120">
+
+        <div class="list-heading">
+          <span>01</span>
+          <strong>SKILLS</strong>
+        </div>
+
+
+        <!-- React -->
+        <div class="skill-row active" data-skill="React.js" data-level="90">
+          <span>01</span>
+          <div class="skill-row-name">
+            <strong>React.js</strong>
+            <small>FRONTEND</small>
+          </div>
+          <span class="skill-percent">90%</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--level:90%"></div></div>
+        </div>
+
+        <!-- Node -->
+        <div class="skill-row" data-skill="Node.js" data-level="88">
+          <span>02</span>
+          <div class="skill-row-name">
+            <strong>Node.js</strong>
+            <small>BACKEND</small>
+          </div>
+          <span class="skill-percent">88%</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--level:88%"></div></div>
+        </div>
+
+        <!-- Express -->
+        <div class="skill-row" data-skill="Express.js" data-level="86">
+          <span>03</span>
+          <div class="skill-row-name">
+            <strong>Express.js</strong>
+            <small>API</small>
+          </div>
+          <span class="skill-percent">86%</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--level:86%"></div></div>
+        </div>
+
+        <!-- Mongo -->
+        <div class="skill-row" data-skill="MongoDB" data-level="84">
+          <span>04</span>
+          <div class="skill-row-name">
+            <strong>MongoDB</strong>
+            <small>DATABASE</small>
+          </div>
+          <span class="skill-percent">84%</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--level:84%"></div></div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-row" data-skill="Python" data-level="82">
+          <span>05</span>
+          <div class="skill-row-name">
+            <strong>Python</strong>
+            <small>BACKEND</small>
+          </div>
+          <span class="skill-percent">82%</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--level:82%"></div></div>
+        </div>
+
+        <!-- Django -->
+        <div class="skill-row" data-skill="Django" data-level="80">
+          <span>06</span>
+          <div class="skill-row-name">
+            <strong>Django</strong>
+            <small>FRAMEWORK</small>
+          </div>
+          <span class="skill-percent">80%</span>
+          <div class="skill-bar-track"><div class="skill-bar-fill" style="--level:80%"></div></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TECHNOLOGY MARQUEE
+    ====================================================== -->
+
+    <div class="skills-marquee" data-reveal="fade">
+      <div class="skills-marquee-track">
+        <span>REACT.JS</span><i>✦</i>
+        <span>NODE.JS</span><i>✦</i>
+        <span>EXPRESS.JS</span><i>✦</i>
+        <span>MONGODB</span><i>✦</i>
+        <span>PYTHON</span><i>✦</i>
+        <span>DJANGO</span><i>✦</i>
+        <span>REST API</span><i>✦</i>
+        <span>GIT</span><i>✦</i>
+        <span>GITHUB</span><i>✦</i>
+
+        <!-- Duplicate for seamless animation -->
+        <span>REACT.JS</span><i>✦</i>
+        <span>NODE.JS</span><i>✦</i>
+        <span>EXPRESS.JS</span><i>✦</i>
+        <span>MONGODB</span><i>✦</i>
+        <span>PYTHON</span><i>✦</i>
+        <span>DJANGO</span><i>✦</i>
+        <span>REST API</span><i>✦</i>
+        <span>GIT</span><i>✦</i>
+        <span>GITHUB</span><i>✦</i>
       </div>
     </div>
 
-    <nav
-      class="navbar"
-      data-aos="fade-down"
-      data-aos-duration="1000"
-      id="navbar">
-      <div class="logo">
-        <img
-          src="assets/Black_and_White_Minimal_Simple_DM_Initials_Logo-removebg-preview.png"
-          alt="logo"
-          width="50"
-          height="50" />
+
+
+    <!-- =====================================================
+         BOTTOM STATEMENT
+    ====================================================== -->
+
+    <div class="skills-bottom" data-reveal="up">
+      <span>02</span>
+      <p>
+        LEARNING NEVER STOPS.
+        <strong>NEITHER DOES BUILDING.</strong>
+      </p>
+      <div class="skills-arrow">↗</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="experience" id="experience">
+
+  <!-- Background Text -->
+  <span class="experience-bg-word">EXPERIENCE</span>
+
+  <!-- Decorative Glows -->
+  <div class="experience-glow experience-glow-one"></div>
+  <div class="experience-glow experience-glow-two"></div>
+
+  <div class="experience-inner">
+
+    <!-- ================= SECTION HEADER ================= -->
+    <div class="experience-header" data-reveal="up">
+
+      <div class="section-label">
+        <span class="label-line"></span>
+        EXPERIENCE
       </div>
 
-      <ul class="nav-btn">
+      <div class="experience-heading-wrap">
+
+        <h2>
+          WHERE I
+          <span>BUILD.</span>
+        </h2>
+
+        <p>
+          Turning ideas into reliable digital products through
+          development, problem-solving and continuous learning.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================= EXPERIENCE TIMELINE ================= -->
+    <div class="experience-list">
+
+      <!-- EXPERIENCE 01 -->
+      <article class="experience-item">
+
+        <div class="experience-number">
+          <span>01</span>
+        </div>
+
+        <div class="experience-line">
+          <span class="timeline-dot"></span>
+        </div>
+
+        <div class="experience-content" data-reveal="up">
+
+          <div class="experience-top">
+
+            <div>
+              <span class="experience-type">
+                CURRENT ROLE
+              </span>
+
+              <h3>
+                Backend Developer
+              </h3>
+
+              <h4>
+                SKONZS
+              </h4>
+            </div>
+
+            <span class="experience-date">
+              2026 — PRESENT
+            </span>
+
+          </div>
+
+          <p>
+            Working on backend development and building reliable
+            server-side systems. Developing APIs, handling databases,
+            authentication and connecting backend services with
+            modern web applications.
+          </p>
+
+          <div class="experience-tags">
+
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
+            <span>REST API</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- EXPERIENCE 02 -->
+      <article class="experience-item">
+
+        <div class="experience-number">
+          <span>02</span>
+        </div>
+
+        <div class="experience-line">
+          <span class="timeline-dot"></span>
+        </div>
+
+        <div class="experience-content" data-reveal="up">
+
+          <div class="experience-top">
+
+            <div>
+              <span class="experience-type">
+                DEVELOPMENT
+              </span>
+
+              <h3>
+                Full Stack Development
+              </h3>
+
+              <h4>
+                Personal & Client Projects
+              </h4>
+            </div>
+
+            <span class="experience-date">
+              2024 — PRESENT
+            </span>
+
+          </div>
+
+          <p>
+            Building responsive and functional web applications across
+            frontend and backend. Working with modern JavaScript,
+            React.js, Node.js, Express.js, MongoDB and Django to turn
+            concepts into complete digital experiences.
+          </p>
+
+          <div class="experience-tags">
+
+            <span>React.js</span>
+            <span>Node.js</span>
+            <span>Django</span>
+            <span>PostgreSQL</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- EXPERIENCE 03 -->
+      <article class="experience-item">
+
+        <div class="experience-number">
+          <span>03</span>
+        </div>
+
+        <div class="experience-line">
+          <span class="timeline-dot"></span>
+        </div>
+
+        <div class="experience-content" data-reveal="up">
+
+          <div class="experience-top">
+
+            <div>
+              <span class="experience-type">
+                TEACHING
+              </span>
+
+              <h3>
+                Full Stack Development Trainer
+              </h3>
+
+              <h4>
+                Online Learning
+              </h4>
+            </div>
+
+            <span class="experience-date">
+              2025 — PRESENT
+            </span>
+
+          </div>
+
+          <p>
+             Teaching Full Stack Development to aspiring developers through
+      practical and easy-to-understand lessons, helping students build
+      real-world projects, strengthen their fundamentals and gain
+      confidence to start their development career.
+          </p>
+
+          <div class="experience-tags">
+
+            <span>Programming</span>
+            <span>Problem Solving</span>
+            <span>Mentoring</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <!-- ================= BOTTOM STATEMENT ================= -->
+    <div class="experience-bottom" data-reveal="up">
+
+      <div class="experience-bottom-number">
+        <span>03</span>
+      </div>
+
+      <div class="experience-bottom-text">
+        <span>CURRENTLY FOCUSED ON</span>
+
+        <strong>
+          BUILDING · LEARNING · CREATING
+        </strong>
+      </div>
+
+      <div class="experience-bottom-mark">
+        +
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CERTIFICATES ================= -->
+<section class="certificates" id="certificates">
+
+  <!-- Background Word -->
+  <span class="certificates-bg-word">CERTIFICATES</span>
+
+  <!-- Decorative Glows -->
+  <div class="certificate-glow certificate-glow-one"></div>
+  <div class="certificate-glow certificate-glow-two"></div>
+
+  <div class="certificates-inner">
+
+    <!-- ================= HEADER ================= -->
+    <div class="certificates-header" data-reveal="up">
+
+      <div class="section-label">
+        <span class="label-line"></span>
+        CERTIFICATES
+      </div>
+
+      <div class="certificates-heading-wrap">
+
+        <h2>
+          PROOF OF
+          <span>PROGRESS.</span>
+        </h2>
+
+        <p>
+          A collection of certifications and achievements that
+          represent my continuous learning, technical growth and
+          dedication to development.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================= CERTIFICATE GRID ================= -->
+    <div class="certificates-grid">
+
+
+      <!-- CERTIFICATE 01 -->
+      <article class="certificate-card" data-reveal="up" data-reveal-delay="0">
+
+        <div class="certificate-image">
+
+          <img
+            src="assets/certificates/certificate-01.jpg"
+            alt="Certificate 01"
+          >
+
+          <div class="certificate-overlay">
+
+            <a
+              href="assets/certificates/certificate-01.jpg"
+              target="_blank"
+              class="certificate-view"
+            >
+              VIEW CERTIFICATE
+              <span>↗</span>
+            </a>
+
+          </div>
+
+          <span class="certificate-number">01</span>
+
+        </div>
+
+
+        <div class="certificate-info">
+
+          <div>
+            <span class="certificate-label">
+              CERTIFICATION
+            </span>
+
+            <h3>
+              Web Development
+            </h3>
+
+            <p>
+              Saylani Mass IT Training
+            </p>
+          </div>
+
+          <span class="certificate-year">
+            2025
+          </span>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- CERTIFICATE 02 -->
+      <article class="certificate-card" data-reveal="up" data-reveal-delay="120">
+
+        <div class="certificate-image">
+
+          <img
+            src="assets/certificates/certificate-02.jpg"
+            alt="Certificate 02"
+          >
+
+          <div class="certificate-overlay">
+
+            <a
+              href="assets/certificates/certificate-02.jpg"
+              target="_blank"
+              class="certificate-view"
+            >
+              VIEW CERTIFICATE
+              <span>↗</span>
+            </a>
+
+          </div>
+
+          <span class="certificate-number">02</span>
+
+        </div>
+
+
+        <div class="certificate-info">
+
+          <div>
+            <span class="certificate-label">
+              ACHIEVEMENT
+            </span>
+
+            <h3>
+              FemHack 2K25
+            </h3>
+
+            <p>
+              Saylani Mass IT Training
+            </p>
+          </div>
+
+          <span class="certificate-year">
+            2025
+          </span>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- CERTIFICATE 03 -->
+      <article class="certificate-card" data-reveal="up" data-reveal-delay="0">
+
+        <div class="certificate-image">
+
+          <img
+            src="assets/certificates/certificate-03.jpg"
+            alt="Certificate 03"
+          >
+
+          <div class="certificate-overlay">
+
+            <a
+              href="assets/certificates/certificate-03.jpg"
+              target="_blank"
+              class="certificate-view"
+            >
+              VIEW CERTIFICATE
+              <span>↗</span>
+            </a>
+
+          </div>
+
+          <span class="certificate-number">03</span>
+
+        </div>
+
+
+        <div class="certificate-info">
+
+          <div>
+            <span class="certificate-label">
+              CERTIFICATION
+            </span>
+
+            <h3>
+              Advanced Development
+            </h3>
+
+            <p>
+              Professional Training
+            </p>
+          </div>
+
+          <span class="certificate-year">
+            2025
+          </span>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- CERTIFICATE 04 -->
+      <article class="certificate-card" data-reveal="up" data-reveal-delay="120">
+
+        <div class="certificate-image">
+
+          <img
+            src="assets/certificates/certificate-04.jpg"
+            alt="Certificate 04"
+          >
+
+          <div class="certificate-overlay">
+
+            <a
+              href="assets/certificates/certificate-04.jpg"
+              target="_blank"
+              class="certificate-view"
+            >
+              VIEW CERTIFICATE
+              <span>↗</span>
+            </a>
+
+          </div>
+
+          <span class="certificate-number">04</span>
+
+        </div>
+
+
+        <div class="certificate-info">
+
+          <div>
+            <span class="certificate-label">
+              CERTIFICATION
+            </span>
+
+            <h3>
+              Programming
+            </h3>
+
+            <p>
+              Technical Training
+            </p>
+          </div>
+
+          <span class="certificate-year">
+            2026
+          </span>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <!-- ================= BOTTOM STATEMENT ================= -->
+    <div class="certificates-bottom" data-reveal="up">
+
+      <span class="certificates-bottom-number">
+        04
+      </span>
+
+      <div class="certificates-bottom-text">
+
+        <span>
+          ALWAYS LEARNING
+        </span>
+
+        <strong>
+          BUILDING · IMPROVING · GROWING
+        </strong>
+
+      </div>
+
+      <div class="certificates-bottom-mark">
+        +
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- =========================================================
+     PREMIUM CONTACT SECTION — v2
+========================================================= -->
+
+<section class="contact" id="contact">
+
+  <div class="contact-bg-text">CONTACT</div>
+
+  <div class="contact-orb contact-orb-1"></div>
+  <div class="contact-orb contact-orb-2"></div>
+
+
+  <div class="contact-wrapper">
+
+    <!-- HEADER -->
+    <div class="contact-header" data-reveal="up">
+      <div class="contact-kicker">
+        <span></span>
+        GET IN TOUCH
+      </div>
+      <div class="contact-index">04</div>
+    </div>
+
+
+    <!-- CARD -->
+    <div class="contact-card">
+
+      <!-- LEFT INFO -->
+      <div class="contact-left" data-reveal="left">
+
+        <p class="contact-eyebrow">HAVE AN IDEA?</p>
+
+        <h2>
+          LET'S
+          <span>TALK.</span>
+        </h2>
+
+        <p class="contact-description">
+          Whether you have a new project, an interesting idea,
+          or simply want to say hello, my inbox is always open.
+        </p>
+
+        <div class="contact-details">
+
+          <div class="contact-detail">
+            <span class="detail-icon">✉</span>
+            <div>
+              <small>EMAIL</small>
+              <a href="mailto:hello@zifrafirdous.dev">hello@zifrafirdous.dev</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="detail-icon">◎</span>
+            <div>
+              <small>BASED IN</small>
+              <strong>Pakistan</strong>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="detail-icon">●</span>
+            <div>
+              <small>STATUS</small>
+              <strong class="availability"><i></i> AVAILABLE FOR WORK</strong>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="contact-social">
+          <small>ELSEWHERE</small>
+          <div class="social-links">
+            <a href="#" target="_blank" aria-label="GitHub">GH</a>
+            <a href="#" target="_blank" aria-label="LinkedIn">LI</a>
+            <a href="#" target="_blank" aria-label="Instagram">IG</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- DIVIDER -->
+      <div class="contact-divider"></div>
+
+
+      <!-- FORM -->
+      <div class="contact-form-wrapper" data-reveal="up" data-reveal-delay="120">
+
+        <form id="contactForm" class="minimal-form">
+
+          <div class="minimal-field">
+            <label for="name">YOUR NAME</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+
+          <div class="minimal-field">
+            <label for="email">YOUR EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+          </div>
+
+          <div class="minimal-field message-field">
+            <label for="message">YOUR MESSAGE</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <div class="form-submit-row">
+
+            <span class="submit-hint">I USUALLY REPLY WITHIN 24 HOURS</span>
+
+            <button type="submit" class="send-button" aria-label="Send message">
+              <span class="send-text">SEND MESSAGE</span>
+              <span class="send-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </button>
+
+          </div>
+
+          <div class="contact-form-status" id="contactStatus"></div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOTTOM -->
+    <div class="contact-bottom" data-reveal="fade">
+      <div class="bottom-line"></div>
+      <div class="bottom-content">
+        <span>ZIFRA FIRDOUS</span>
+        <span>FULL STACK DEVELOPER</span>
+        <span>© 2026</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ===================================================
+     PROJECT CARD TEMPLATE
+=================================================== -->
+
+<template id="project-card-template">
+
+  <article class="project-card">
+
+    <!-- ================= PROJECT THUMB ================= -->
+    <div class="project-thumb">
+
+      <!-- PROJECT VIDEO -->
+      <video
+        class="project-video"
+        muted
+        autoplay
+        loop
+        playsinline
+        preload="auto"
+      ></video>
+
+      <!-- PROJECT NUMBER -->
+      <span class="project-num"></span>
+
+    </div>
+
+
+    <!-- ================= PROJECT INFO ================= -->
+    <div class="project-body">
+
+      <!-- PROJECT TITLE -->
+      <div class="project-title"></div>
+
+      <!-- PROJECT TECHNOLOGY -->
+      <div class="project-sub"></div>
+
+
+      <!-- ================= PROJECT LINKS ================= -->
+      <div class="project-links">
+
+        <!-- GITHUB -->
+        <a
+          class="gh-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View project on GitHub"
+        >
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.15v3.19c0 .31.21.66.79.55A10.98 10.98 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"
+            />
+          </svg>
+
+          <span>GitHub</span>
+
+        </a>
+
+
+        <!-- LIVE PROJECT -->
+        <a
+          class="live-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View live project"
+        >
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+
+            <path
+              d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+            />
+
+            <polyline points="15 3 21 3 21 9" />
+
+            <line
+              x1="10"
+              y1="14"
+              x2="21"
+              y2="3"
+            />
+
+          </svg>
+
+          <span>Live</span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </article>
+
+</template>
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+  <div class="footer-inner">
+
+    <!-- TOP ROW -->
+    <div class="footer-top">
+
+      <!-- LOGO — same as navbar -->
+      <div class="footer-mark">
+        <div class="dot">Z</div>
+        <div class="label">
+          FULL STACK DEVELOPER
+          <strong>WEB & APP BUILDER</strong>
+        </div>
+      </div>
+
+      <!-- LINKS -->
+      <ul class="footer-links">
         <li><a href="#home">Home</a></li>
+        <li><a href="#work">Projects</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#project">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <div class="toggle" id="toggleBtn">☰</div>
+      <!-- SOCIALS -->
+     <div class="footer-social">
 
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#project">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <!-- GITHUB -->
+  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.98 10.98 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.15v3.19c0 .31.21.66.79.55A10.98 10.98 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+    </svg>
+  </a>
 
-    <section
-      id="home"
-      class="header"
-      data-aos="fade-up"
-      data-aos-duration="1000">
-      <div class="hero-container">
-        <div class="hero-content">
-          <h1>Hi, I'm <span>Zifra Firdous</span></h1>
+  <!-- LINKEDIN -->
+  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+    </svg>
+  </a>
 
-          <h2 class="typing"></h2>
+  <!-- FACEBOOK -->
+  <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/>
+    </svg>
+  </a>
 
-          <p>
-            <span class="highlight">Full Stack Developer</span> specializing in
-            React.js, Node.js, and modern UI design. I build fast, scalable, and
-            user-friendly web applications with seamless frontend and backend
-            integration.
-          </p>
+  <!-- EMAIL -->
+  <a href="mailto:zifrafirdous.dev@gmail.com" aria-label="Email">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 4h16v16H4z" opacity="0"></path>
+      <path d="M22 6l-10 7L2 6"></path>
+      <path d="M2 6h20v12H2z"></path>
+    </svg>
+  </a>
 
-          <div class="hero-buttons">
-            <a href="#project" class="btn primary">View My Work</a>
-            <a href="#contact" class="btn secondary">Hire Me</a>
-          </div>
-        </div>
+</div>
 
-        <div class="hero-image">
-          <img src="assets/aboutpfp.png" alt="Zifra Firdous" />
-        </div>
-      </div>
-    </section>
-    <!-- <hr class="divider" /> -->
-    <section class="who-section" data-aos="fade-up" id="about">
-      <h1 class="heading">About <span>Me</span></h1>
 
-      <div class="who-container">
-        <div class="who-image" data-aos="fade-right">
-          <img src="assets/aboutpfp.png" alt="Zifra Firdous" />
-        </div>
+    <!-- DIVIDER -->
+    <div class="footer-divider"></div>
 
-        <div class="who-content" data-aos="fade-left">
-          <h2>Who I Am</h2>
 
-          <p>
-            I'm <strong><span class="highlight">Zifra Firdous</span></strong
-            >, a passionate
-            <span class="highlight">Full Stack Developer</span>
-            focused on building modern, scalable and visually powerful web
-            applications using
-            <span class="highlight">MERN Stack</span> technologies.
-          </p>
+    <!-- BOTTOM ROW -->
+    <div class="footer-bottom">
 
-          <p>
-            I combine <span class="highlight">creativity</span> with
-            <span class="highlight">clean coding practices</span> to develop
-            high-performance websites, responsive interfaces, and seamless
-            <span class="highlight">backend systems</span>.
-          </p>
+      <span>© 2026 Zifra Firdous. All rights reserved.</span>
 
-          <div class="who-tags">
-            <span>MERN Stack</span>
-            <span>React.js</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-            <span>REST APIs</span>
-          </div>
-        </div>
-      </div>
-    </section>
+      <span class="footer-tag">
+        Designed & Built with <i>♥</i> by Zifra Firdous
+      </span>
 
-    <section class="expertise-section" data-aos="fade-up">
-      <h1 class="heading" data-aos="zoom-in">
-        Development <span>Expertise</span>
-      </h1>
+      <a href="#home" class="footer-back-top" aria-label="Back to top">
+        ↑
+      </a>
 
-      <div class="expertise-container">
-        <div class="expertise-card">
-          <i class="fa-solid fa-code icon"></i>
-          <h3>Frontend Development</h3>
-          <p>
-            Modern responsive interfaces built with React.js, animations and
-            performance-focused UI.
-          </p>
-        </div>
+    </div>
 
-        <div class="expertise-card">
-          <i class="fa-solid fa-server icon"></i>
-          <h3>Backend Development</h3>
-          <p>
-            Secure APIs, database management and scalable server architecture
-            using Node.js & MongoDB.
-          </p>
-        </div>
+  </div>
 
-        <div class="expertise-card">
-          <i class="fa-solid fa-layer-group icon"></i>
-          <h3>Full Stack Solutions</h3>
-          <p>
-            Complete web applications from frontend design to backend
-            deployment.
-          </p>
-        </div>
+</footer>
+<!-- =========================================================
+     CHATBOT — ZIA (Zifra's Intelligent Assistant)
+========================================================= -->
 
-        <div class="expertise-card">
-          <i class="fa-solid fa-rocket icon"></i>
-          <h3>Performance Optimization</h3>
-          <p>
-            Speed optimization, bug fixing and improving website performance for
-            better user experience.
-          </p>
+<div class="zia-widget">
+
+  <!-- TOGGLE BUTTON -->
+  <button class="zia-toggle" id="ziaToggle" aria-label="Open chat">
+    <span class="zia-toggle-icon zia-icon-chat">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </span>
+    <span class="zia-toggle-icon zia-icon-close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </span>
+  </button>
+
+  <!-- CHAT WINDOW -->
+  <div class="zia-window" id="ziaWindow">
+
+    <!-- HEADER -->
+    <div class="zia-header">
+      <div class="zia-header-mark">
+        <div class="zia-dot">Z</div>
+        <div class="zia-header-text">
+          <strong>ZF</strong>
+          <small>Zifra's Assistant</small>
         </div>
       </div>
-    </section>
-    <section
-      id="skills"
-      class="skills-section"
-      data-aos="flip-left"
-      data-aos-duration="2000">
-      <h1 class="heading" data-aos="zoom-in">Technical <span>Skills</span></h1>
+      <span class="zia-status"><i></i> Online</span>
+    </div>
 
-      <div class="skills-container">
-        <div class="cont-one">
-          <div class="skill">
-            <img src="assets/html.png" alt="HTML" width="70" height="70" />
-            <div class="skill-info">
-              <p>HTML</p>
-              <div class="progress-bar">
-                <span data-width="95">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
+    <!-- MESSAGES -->
+    <div class="zia-messages" id="ziaMessages"></div>
 
-          <div class="skill">
-            <img src="assets/css.png" alt="CSS" width="70" height="70" />
-            <div class="skill-info">
-              <p>CSS</p>
-              <div class="progress-bar">
-                <span data-width="90">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
+    <!-- QUICK SUGGESTIONS -->
+    <div class="zia-suggestions" id="ziaSuggestions">
+      <button data-q="What skills does Zifra have?">Skills</button>
+      <button data-q="Tell me about her projects">Projects</button>
+      <button data-q="How can I contact her?">Contact</button>
+      <button data-q="Is she available for work?">Availability</button>
+    </div>
 
-          <div class="skill">
-            <img src="assets/js.png" alt="JavaScript" width="70" height="70" />
-            <div class="skill-info">
-              <p>JavaScript</p>
-              <div class="progress-bar">
-                <span data-width="85">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <img src="assets/ty.png" alt="TypeScript" width="70" height="70" />
-            <div class="skill-info">
-              <p>TypeScript</p>
-              <div class="progress-bar">
-                <span data-width="80">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <img
-              src="assets/mongoDB.png"
-              alt="MongoDB"
-              width="70"
-              height="70" />
-            <div class="skill-info">
-              <p>MongoDB</p>
-              <div class="progress-bar">
-                <span data-width="85">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cont-two">
-          <div class="skill">
-            <img
-              src="assets/bootstrapt.png"
-              alt="BootStrapt"
-              width="70"
-              height="70" />
-            <div class="skill-info">
-              <p>BootStrapt</p>
-              <div class="progress-bar">
-                <span data-width="95">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <img
-              src="assets/tailwind.png"
-              alt="Tailwind CSS"
-              width="70"
-              height="70" />
-            <div class="skill-info">
-              <p>Tailwind CSS</p>
-              <div class="progress-bar">
-                <span data-width="95">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <img src="assets/react.png" alt="React" width="70" height="70" />
-            <div class="skill-info">
-              <p>React.js</p>
-              <div class="progress-bar">
-                <span data-width="82">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <img src="assets/next.png" alt="Next.js" width="70" height="70" />
-            <div class="skill-info">
-              <p>Next.js</p>
-              <div class="progress-bar">
-                <span data-width="80">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <img src="assets/node.png" alt="Node.js" width="70" height="70" />
-            <div class="skill-info">
-              <p>Node.js</p>
-              <div class="progress-bar">
-                <span data-width="88">
-                  <b class="percent">0%</b>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="contact-grid">
-        <div class="contact-info" data-aos="fade-right">
-          <h2 class="contact-heading" data-aos="zoom-in">
-            Let’s Start <br />
-            <span>Something Big</span>
-          </h2>
-
-          <div class="line"></div>
-
-          <p class="contact-description">
-            I’m always open to discussing new projects, creative ideas, or
-            opportunities to build something meaningful. Feel free to reach out
-            and let’s turn your vision into a powerful digital experience.
-          </p>
-
-          <div class="info-item">
-            <div class="contact-icon">📍</div>
-            <div class="loc-info">
-              <h4>Location</h4>
-              <p>Karachi, Sindh, Pakistan</p>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="contact-icon">✉️</div>
-            <div class="email-info">
-              <h4>Email Me</h4>
-              <p>zifrafirdous.dev@gmail.com</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-wrapper" data-aos="fade-left">
-          <h3 class="form-heading">Send Me a Message</h3>
-          <p class="form-subtext">
-            Got a project in mind? Fill out the form and I’ll get back to you
-            soon.
-          </p>
-
-          <form class="contact-form" id="contactForm">
-            <div class="input-group">
-              <input type="text" name="fullName" required />
-              <label>Full Name</label>
-            </div>
-
-            <div class="input-group">
-              <input type="email" name="email" required />
-              <label>Email Address</label>
-            </div>
-
-            <div class="input-group">
-              <textarea name="message" rows="4" required></textarea>
-              <label>How can I help you?</label>
-            </div>
-
-            <button type="submit" class="submit-btn">SEND MESSAGE</button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="education-section">
-      <h1 class="heading" data-aos="zoom-in">
-        Educational <span>Journey</span>
-      </h1>
-
-      <div class="edu-card" data-aos="zoom-in">
-        <div class="left-line"></div>
-
-        <div class="edu-content">
-          <div class="edu-header">
-            <div class="img-title">
-              <img src="assets/Inter.png" />
-              <h2>Intermediate in Medical Science</h2>
-            </div>
-            <span class="year">2023 - 2024</span>
-          </div>
-
-          <p>
-            Completed intermediate studies with a strong focus on medical
-            subjects and laboratory work.
-          </p>
-        </div>
-      </div>
-
-      <div class="edu-card" data-aos="zoom-in">
-        <div class="left-line"></div>
-
-        <div class="edu-content">
-          <div class="edu-header">
-            <div class="img-title">
-              <img src="assets/smit.png" />
-              <h2>Saylani Mass IT Training (SMIT)</h2>
-            </div>
-            <span class="year">2024 - Present</span>
-          </div>
-
-          <p>
-            Learning modern web development including advanced tools, frameworks
-            and practical project building.
-          </p>
-
-          <div class="skill-box">
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/html.png" />
-                  <h3>HTML</h3>
-                </div>
-                <span class="status complete">Completed</span>
-              </div>
-              <p>Mastered semantic structure and complete webpage layouts.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/css.png" />
-                  <h3>CSS</h3>
-                </div>
-                <span class="status complete">Completed</span>
-              </div>
-              <p>Expertise in flexbox, grid system and responsive UI design.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/js.png" />
-                  <h3>JavaScript</h3>
-                </div>
-                <span class="status complete">Completed</span>
-              </div>
-              <p>Built interactive interfaces using DOM and event handling.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/react.png" />
-                  <h3>React.Js</h3>
-                </div>
-                <span class="status complete">Completed</span>
-              </div>
-              <p>Developing reusable components and dynamic web apps.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/mongoDB.png" />
-                  <h3>MongoDB</h3>
-                </div>
-                <span class="status complete">Completed</span>
-              </div>
-              <p>Mastered NoSQL database management and querying.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/node.png" />
-                  <h3>Node.Js</h3>
-                </div>
-                <span class="status complete">Completed</span>
-              </div>
-              <p>Server-side JavaScript runtime environment.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="edu-card" data-aos="zoom-in">
-        <div class="left-line"></div>
-
-        <div class="edu-content">
-          <div class="edu-header">
-            <div class="img-title">
-              <img src="assets/code.png" />
-              <h2>GIAIC - Artificial Intelligence & Computing</h2>
-            </div>
-            <span class="year">2024 - Present</span>
-          </div>
-
-          <p>Studying AI, automation and modern full-stack technologies.</p>
-
-          <div class="skill-box">
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/ty.png" />
-                  <h3>TypeScript</h3>
-                </div>
-                <span class="status complete">Completed</span>
-              </div>
-              <p>Type-safe scalable applications using interfaces and types.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/next.png" />
-                  <h3>Next.Js</h3>
-                </div>
-                <span class="status complete">Completed</span>
-              </div>
-              <p>Server-side rendering and optimized production apps.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/python.png" />
-                  <h3>Advanced Python</h3>
-                </div>
-                <span class="status complete">Completed</span>
-              </div>
-              <p>OOP, automation scripts and advanced logical programming.</p>
-            </div>
-
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-title">
-                  <img src="assets/ai.png" />
-                  <h3>Agentic AI</h3>
-                </div>
-                <span class="status ongoing">Ongoing</span>
-              </div>
-              <p>Building AI agents and workflow automation systems.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="project" class="projects-section">
-      <h1 class="heading" data-aos="zoom-in">
-        Projects & <span>Repositories</span>
-      </h1>
-
-      <div class="projects-grid" data-aos="fade-right">
-        <div class="project-card">
-          <video autoplay muted loop playsinline>
-            <source src="assets/complain-portal.mp4" />
-          </video>
-
-          <h2 class="highlight">Project One</h2>
-          <p>Hackathon frontend UI with responsive design.</p>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/zifra3114/Complaint-Portal"
-              class="github"
-              target="_blank"
-              >GitHub</a
-            >
-            <a
-              href="https://complaint-portal-phi.vercel.app/"
-              class="live"
-              target="_blank"
-              >Live Demo</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <video autoplay muted loop playsinline>
-            <source src="assets/makeup-ui .mp4" />
-          </video>
-
-          <h2 class="highlight">Project Two</h2>
-          <p>News website layout project.</p>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/zifra3114/Makeup-Beauty-website"
-              class="github"
-              target="_blank"
-              >GitHub</a
-            >
-            <a
-              href="https://makeup-beauty-website.vercel.app/"
-              class="live"
-              target="_blank"
-              >Live Demo</a
-            >
-          </div>
-        </div>
-        <div class="project-card">
-          <video autoplay muted loop playsinline>
-            <source src="assets/chatApp.mp4" />
-          </video>
-          <h2 class="highlight">Project Three</h2>
-          <p>JavaScript interactive UI project.</p>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/zifra3114/Chat-App-"
-              class="github"
-              target="_blank"
-              >GitHub</a
-            >
-            <a
-              href="https://chat-app-pi-ten-45.vercel.app/"
-              class="live"
-              target="_blank"
-              >Live Demo</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <video autoplay muted loop playsinline>
-            <source src="assets/resume.mp4" />
-          </video>
-          <h2 class="highlight">Project Four</h2>
-          <p>Chat App using Firebase.</p>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/zifra3114/Resume-Builder-Website"
-              class="github"
-              target="_blank"
-              >GitHub</a
-            >
-            <a
-              href="https://resume-builder-website-sepia.vercel.app/"
-              class="live"
-              target="_blank"
-              >Live Demo</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <video autoplay muted loop playsinline>
-            <source src="assets/news.mp4" />
-          </video>
-          <h2 class="highlight">Project Five</h2>
-          <p>Tailwind CSS project.</p>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/zifra3114/NEWS-PAPER-WEBSITE"
-              class="github"
-              >GitHub</a
-            >
-            <a
-              href="https://github.com/zifra3114/NEWS-PAPER-WEBSITE"
-              class="live"
-              >Live Demo</a
-            >
-          </div>
-        </div>
-
-        <div class="project-card">
-          <video autoplay muted loop playsinline>
-            <source src="assets/juice-ui.mp4" />
-          </video>
-          <h2 class="highlight">Project Six</h2>
-          <p>Bootstrap website project.</p>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/zifra3114/juiceables-website"
-              class="github"
-              >GitHub</a
-            >
-            <a href="https://juiceables-website.vercel.app/" class="live"
-              >Live Demo</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-wave">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none">
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"></path>
+    <!-- INPUT -->
+    <form class="zia-input-row" id="ziaForm">
+      <input type="text" id="ziaInput" placeholder="Ask about Zifra's work..." autocomplete="off">
+      <button type="submit" aria-label="Send">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
         </svg>
-      </div>
+      </button>
+    </form>
 
-      <div class="footer-container">
-        <div
-          class="footer-section brand"
-          data-aos="fade-up"
-          data-aos-delay="100">
-          <div class="footer-logo">
-            <h2 class="footer-title">ZIFRA <span>FIRDOUS</span></h2>
-          </div>
-          <p class="footer-description">
-            Passionate Full Stack Developer specializing in building
-            high-performance web applications using the MERN stack. Turning
-            complex problems into elegant solutions.
-          </p>
-          <div class="footer-socials">
-            <a
-              href="https://github.com/zifra3114"
-              target="_blank"
-              class="social-link"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://linkedin.com/in/zifra-firdous"
-              target="_blank"
-              class="social-link"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              href="https://instagram.com/zifra.dev"
-              target="_blank"
-              class="social-link"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="mailto:zifrafirdous.dev@gmail.com" class="social-link"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </div>
-        </div>
+  </div>
 
-        <div
-          class="footer-section links"
-          data-aos="fade-up"
-          data-aos-delay="200">
-          <h3 class="section-title">Navigation</h3>
-          <ul class="footer-links">
-            <li>
-              <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
-            </li>
-            <li>
-              <a href="#about"><i class="fas fa-chevron-right"></i> About Me</a>
-            </li>
-            <li>
-              <a href="#skills"
-                ><i class="fas fa-chevron-right"></i> My Skills</a
-              >
-            </li>
-            <li>
-              <a href="#project"
-                ><i class="fas fa-chevron-right"></i> Projects</a
-              >
-            </li>
-            <li>
-              <a href="#contact"
-                ><i class="fas fa-chevron-right"></i> Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div
-          class="footer-section services"
-          data-aos="fade-up"
-          data-aos-delay="300">
-          <h3 class="section-title">Expertise</h3>
-          <ul class="footer-links">
-            <li>
-              <a href="javascript:void(0)"
-                ><i class="fas fa-check"></i> Frontend Development</a
-              >
-            </li>
-            <li>
-              <a href="javascript:void(0)"
-                ><i class="fas fa-check"></i> Backend Systems</a
-              >
-            </li>
-            <li>
-              <a href="javascript:void(0)"
-                ><i class="fas fa-check"></i> MERN Stack Solutions</a
-              >
-            </li>
-            <li>
-              <a href="javascript:void(0)"
-                ><i class="fas fa-check"></i> API Integration</a
-              >
-            </li>
-            <li>
-              <a href="javascript:void(0)"
-                ><i class="fas fa-check"></i> Responsive Design</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div
-          class="footer-section contact-info"
-          data-aos="fade-up"
-          data-aos-delay="400">
-          <h3 class="section-title">Get in Touch</h3>
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Karachi, Sindh, Pakistan</p>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <p>zifrafirdous.dev@gmail.com</p>
-          </div>
-          <div class="footer-newsletter">
-            <h4>Newsletter</h4>
-            <div class="subscribe-form">
-              <input type="email" placeholder="Email Address" />
-              <button type="button"><i class="fas fa-paper-plane"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="footer-line"></div>
-        <div class="footer-bottom-content">
-          <p class="copyright">
-            &copy; 2025 <span>Zifra Firdous</span>. All Rights Reserved.
-          </p>
-          <div class="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-          </div>
-          <button id="backToTop" class="back-to-top">
-            <i class="fas fa-arrow-up"></i>
-          </button>
-        </div>
-      </div>
-
-      <div id="chat-icon">ZF</div>
-
-      <div id="chat-window">
-        <div id="chat-header">
-          <span>Chat with Zifra AI</span>
-          <button id="close-btn">✖</button>
-        </div>
-        <div id="chat-body">
-          <div id="chat-messages"></div>
-          <div id="chat-input">
-            <textarea
-              id="user-input"
-              placeholder="Ask something..."
-              rows="1"></textarea>
-            <button id="send-btn">➤</button>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <canvas id="fireCanvas"></canvas>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
-    <script src="chatbot.js"></script>
-  </body>
+</div>
+  <script src="script.js"></script>
+  <script src="scroll-animations.js"></script>
+</body>
 </html>
